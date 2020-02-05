@@ -7,5 +7,5 @@ $webSiteName = "Site Name"
 # Get web site object
 $webSite = Get-Item "IIS:\Sites\$webSiteName"
 
-Write-Output "Kefalet Sistemi çalıştırılıyor $webSiteName"
+Write-Output "$webSiteName site started."
 $webSite.Start()
