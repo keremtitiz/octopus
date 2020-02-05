@@ -7,5 +7,5 @@ $webSiteName = "Site Name"
 # Get web site object
 $webSite = Get-Item "IIS:\Sites\$webSiteName"
 
-Write-Output "$webSiteName site started."
+Write-Output "$webSiteName site is started."
 $webSite.Start()
