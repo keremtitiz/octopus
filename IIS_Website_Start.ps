@@ -1,0 +1,11 @@
+# Load IIS module:
+Import-Module WebAdministration
+
+# Set a name of the site we want to restart
+$webSiteName = "Site Name"
+
+# Get web site object
+$webSite = Get-Item "IIS:\Sites\$webSiteName"
+
+Write-Output "Kefalet Sistemi çalıştırılıyor $webSiteName"
+$webSite.Start()
